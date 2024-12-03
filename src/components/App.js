@@ -51,8 +51,6 @@ function App() {
 
   return (
     <div className="font-sans">
-      <NavigationMenu />
-      <CookieBanner />
       {loading ? (
         <Spinner />
       ) : (
@@ -61,6 +59,8 @@ function App() {
             isDarkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"
           }`}
         >
+          <NavigationMenu />
+          <CookieBanner />
           {/* Hero Section */}
           <section
             className={`${
