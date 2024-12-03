@@ -75,22 +75,22 @@ function App() {
                 <div className="w-full md:w-1/2 text-center md:text-left">
                   <h1
                     className={`${
-                      isDarkMode ? "text-white" : "text-gray-900"
-                    } text-lg sm:text-1xl md:text-2xl font-extrabold mb-6 font-DancingScript`}
+                      isDarkMode ? "text-yellow-500" : "text-blue-700"
+                    } text-lg sm:text-1xl md:text-2xl font-extrabold font-cursive`}
                   >
                     hello,
                   </h1>
                   <h1
                     className={`${
                       isDarkMode ? "text-white" : "text-gray-900"
-                    } text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6`}
+                    } text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4`}
                   >
                     I'm Raymart Santos
                   </h1>
                   <p
                     className={`${
                       isDarkMode ? "text-white" : "text-gray-900"
-                    } text-xl sm:text-2xl md:text-3xl mb-6`}
+                    } text-xl sm:text-2xl md:text-3xl mb-4`}
                   >
                     {" "}
                     <ReactTyped

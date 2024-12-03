@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Poppins", "Roboto", "Arial", "sans-serif"], // Add preferred fonts
+        cursive: ['"Dancing Script"', "cursive"],
       },
     },
   },
