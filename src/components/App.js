@@ -60,7 +60,7 @@ function App() {
           }`}
         >
           <NavigationMenu />
-          <CookieBanner />
+          {/* <CookieBanner /> */}
           {/* Hero Section */}
           <section
             className={`${
