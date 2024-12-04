@@ -1,0 +1,17 @@
+<div className="absolute top-1/2 left-72 transform -translate-y-1/2 space-y-4">
+  {heroContents.map((_, index) => (
+    <button
+      key={index}
+      className={` flex flex-row-reverse w-3 h-3 rounded-full border-2 transition-all duration-300 mb-2 ${
+        currentSlide === index
+          ? "bg-yellow-500 border-yellow-500"
+          : "bg-transparent border-white hover:border-yellow-500"
+      }${
+        isDarkMode
+          ? "bg-yellow-500 border-yellow-500"
+          : "bg-transparent border-blue-500 hover:border-blue-400"
+      }`}
+      onClick={() => changeSlide(index)}
+    />
+  ))}
+</div>;

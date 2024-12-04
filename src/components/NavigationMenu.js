@@ -14,7 +14,7 @@ function NavigationMenu() {
           <div className="flex-shrink-0">
             <h1 className="text-xl font-bold">emrtsnts</h1>
           </div>
-          <div className="hidden md:flex space-x-6">
+          {/* <div className="hidden md:flex space-x-6">
             <a href="#home" className="relative group">
               Home
               <span
@@ -73,7 +73,7 @@ function NavigationMenu() {
                 )}
               </svg>
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
       {isOpen && (
