@@ -286,20 +286,18 @@ function App() {
           </section>
 
           {/* Pagination */}
-          <div className="absolute top-1/2 left-4 transform -translate-y-1/2">
-            <div className="flex flex-col space-y-4">
+          <div className="absolute bottom-4 w-full flex justify-center">
+            <div className="flex flex-row md:flex-col space-x-4 md:space-x-0 md:space-y-4">
               {heroContents.map((_, index) => (
                 <button
                   key={index}
-                  className={`w-3 h-3 rounded-full transition-colors ${
+                  className={`w-3 h-3 rounded-full ${
                     currentSlide === index
                       ? isDarkMode
                         ? "bg-yellow-500"
                         : "bg-blue-500"
-                      : isDarkMode
-                      ? "bg-gray-400 hover:bg-gray-500"
-                      : "bg-gray-400 hover:bg-blue-500"
-                  }`}
+                      : "bg-gray-400 hover:bg-gray-500"
+                  } transition-colors`}
                   onClick={() => changeSlide(index)}
                 />
               ))}
